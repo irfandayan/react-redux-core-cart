@@ -9,17 +9,16 @@ import ProductComponent from './ProductComponent';
 const ProductListing = () => {
   const dispatch = useDispatch();
 
-  const fetchProducts = async () => {
-    const response = await axios
-      .get('https://fakestoreapi.com/products')
-
-      .catch((err) => {
-        console.log('Error', err);
-      });
-    dispatch(setProducts(response.data));
-  };
-
   useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await axios
+        .get('https://fakestoreapi.com/products')
+
+        .catch((err) => {
+          console.log('Error', err);
+        });
+      dispatch(setProducts(response.data));
+    };
     fetchProducts();
   }, []);
 
