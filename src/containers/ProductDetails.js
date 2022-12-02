@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+
 import { useDispatch, useSelector } from 'react-redux';
 
 import {
-  selectedProduct,
   removeSelectedProduct,
   fetchProduct,
 } from '../redux/actions/productActions';
@@ -19,19 +18,6 @@ const ProductDetails = () => {
   const { title, image, price, category, description } = product;
 
   useEffect(() => {
-    // // fetch single product deatils
-    // const fetchProductDetail = async () => {
-    //   const response = await axios
-    //     .get(`https://fakestoreapi.com/products/${productId}`)
-    //     .catch((err) => {
-    //       console.log('Error', err);
-    //     });
-    //   // console.log(response.data);
-    //   dispatch(selectedProduct(response.data));
-    // };
-
-    // if (productId && productId !== '') fetchProductDetail();
-
     if (productId && productId !== '') dispatch(fetchProduct(productId));
 
     // Note: useEffect cleanup function
