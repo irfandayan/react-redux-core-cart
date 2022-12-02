@@ -13,12 +13,12 @@ export const fetchProduct = (id) =>
     dispatch({ type: ActionTypes.SELECTED_PRODUCT, payload: response.data });
   };
 
-export const setProducts = (products) => {
-  return {
-    type: ActionTypes.SET_PRODUCTS,
-    payload: products,
-  };
-};
+// export const setProducts = (products) => {
+//   return {
+//     type: ActionTypes.SET_PRODUCTS,
+//     payload: products,
+//   };
+// };
 
 export const selectedProduct = (product) => {
   return {
