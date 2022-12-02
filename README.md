@@ -6,7 +6,7 @@
 <ul>
 <li>React.js
 <ul>
-<li><li>useParams</li>
+<li>useParams</li>
 <li>useEffect Cleanup function</li>
 </ul>
 </li>
