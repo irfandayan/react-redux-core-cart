@@ -1,4 +1,4 @@
-<h1><a href="https://venerable-cannoli-93fc28.netlify.app/"> Demo </a></h1>
+<h1><a href="https://redux-core-cart.netlify.app/"> Live Site </a></h1>
 
 <h2>React Redux Cor Cart </h2>
 
